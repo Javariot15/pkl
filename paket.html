@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelola Paket - Creative JIA Network Admin</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">
+                <img src="assets/logo.png" alt="Creative JIA Network Logo" width="30" height="30" class="d-inline-block align-top">
+                Kelola Paket - Creative JIA Network Admin
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="packages.html">Paket</a></li>
+                    <li class="nav-item"><a class="nav-link" href="order.html">Pemesanan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Logout</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mt-4">
+        <div class="row">
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Menu Admin</h5>
+                        <ul class="list-group">
+                            <li class="list-group-item"><a href="pelanggan.html">Data Pelanggan</a></li>
+                            <li class="list-group-item"><a href="pesanan.html">Pemesanan Layanan</a></li>
+                            <li class="list-group-item active"><a href="paket.html">Paket Layanan</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Kelola Paket Layanan</h5>
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Nama Paket</th>
+                                        <th scope="col">Harga</th>
+                                        <th scope="col">Deskripsi</th>
+                                        <th scope="col"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Basic</td>
+                                        <td>Rp 200.000/bulan</td>
+                                        <td>Paket dengan kecepatan internet 20 Mbps</td>
+                                        <td>
+                                            <button type="button" class="btn btn-primary btn-sm">Edit</button>
+                                            <button type="button" class="btn btn-danger btn-sm">Hapus</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Standard</td>
+                                        <td>Rp 300.000/bulan</td>
+                                        <td>Paket dengan kecepatan internet 50 Mbps</td>
+                                        <td>
+                                            <button type="button" class="btn btn-primary btn-sm">Edit</button>
+                                            <button type="button" class="btn btn-danger btn-sm">Hapus</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>Premium</td>
+                                        <td>Rp 500.000/bulan</td>
+                                        <td>Paket dengan kecepatan internet 100 Mbps</td>
+                                        <td>
+                                            <button type="button" class="btn btn-primary btn-sm">Edit</button>
+                                            <button type="button" class="btn btn-danger btn-sm">Hapus</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <button type="button" class="btn btn-success">Tambah Paket Baru</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Creative JIA Network. Semua hak dilindungi.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

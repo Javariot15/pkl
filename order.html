@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemesanan - Creative JIA Network</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/logo.png" alt="Creative JIA Network Logo" width="30" height="30" class="d-inline-block align-top">
+                Creative JIA Network
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="packages.html">Paket</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="order.html">Pesan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                    <li class="nav-item"><a class="nav-link" href="register.html">Daftar</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card my-5">
+                    <div class="card-body">
+                        <h3 class="card-title text-center">Pemesanan Layanan Internet</h3>
+                        <form action="payment.html">
+                            <div class="form-group">
+                                <label for="name">Nama Lengkap:</label>
+                                <input type="text" class="form-control" id="name" placeholder="Masukkan nama lengkap" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Nomor Telepon:</label>
+                                <input type="tel" class="form-control" id="phone" placeholder="Masukkan nomor telepon" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="package">Pilih Paket:</label>
+                                <select class="form-control" id="package" required>
+                                    <option value="">Pilih paket</option>
+                                    <option value="basic">Basic - Rp 200.000/bulan</option>
+                                    <option value="standard">Standard - Rp 300.000/bulan</option>
+                                    <option value="premium">Premium - Rp 500.000/bulan</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Pesan Sekarang</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Creative JIA Network. Semua hak dilindungi.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
